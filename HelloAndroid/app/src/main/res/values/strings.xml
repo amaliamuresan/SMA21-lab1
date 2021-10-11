@@ -2,4 +2,13 @@
     <string name="app_name">Hello Android</string>
     <string name="your_name">Your name</string>
     <string name="say_hello">Say Hello</string>
+    <string name="search">Search</string>
+    <string name="share">Share</string>
+
+    <string-array name="spinner_content">
+        <item name="black">Black</item>
+        <item name="blue">Blue</item>
+        <item name="red">Red</item>
+        <item name="green">Green</item>
+    </string-array>
 </resources>
