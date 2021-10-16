@@ -10,13 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloAndroid">
         <activity
-            android:name=".MainActivity"
+            android:name=".intents.MainFilterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="MSA.LAUNCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="tel" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lifecycle.ActivityA" />
+        <activity android:name=".lifecycle.ActivityB" />
+        <activity android:name=".lifecycle.ActivityC" />
+        <activity
+            android:name=".intents.MainIntentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
